@@ -402,8 +402,8 @@ extraContainerPorts: []
 podSecurityContext:
   enabled: true
   fsGroup: 1001
-  seccompProfile:
-    type: "RuntimeDefault"
+  ## seccompProfile:
+    ## type: "RuntimeDefault"
 ## Configure Container Security Context (only main container)
 ## ref: https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#set-the-security-context-for-a-container
 ## @param containerSecurityContext.enabled Enabled WordPress containers' Security Context
